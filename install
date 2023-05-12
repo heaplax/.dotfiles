@@ -3,7 +3,9 @@
 set -e
 
 CONFIG="install.conf.yaml"
-if [[ "$USER"  == "zitian" ]]; then CONFIG="install_zt.conf.yaml" fi
+if [[ "$USER"  == "zitian" ]]; then
+    CONFIG="install_zt.conf.yaml"
+fi
 
 DOTBOT_DIR="dotbot"
 
