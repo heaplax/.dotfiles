@@ -186,3 +186,8 @@
 # alias cd=cd_func
 
 alias tt="echo 'test ok!'"
+
+if [[ "$USER"  == "zitian" ]]; then
+    module load cuda/11.2
+    source /root/Desktop/workspace/anaconda3/bin/activate && conda activate
+fi
