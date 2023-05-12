@@ -185,6 +185,7 @@
 #
 # alias cd=cd_func
 
+
 if [[ "$USER"  == "zitian" ]]; then
     alias activate_heaplax="source /nobackup/users/zfchen/zt/.dotfiles/bashrc"
     module load cuda/11.2
@@ -194,4 +195,11 @@ fi
 
 alias tt="echo 'test ok!'"
 alias gpl="git pull"
-alias gph="git push"
+
+push_func ()
+{
+    git add .
+    git commit -m $1
+    git push -u origin main
+}
+alias gph=push_func
