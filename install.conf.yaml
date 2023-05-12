@@ -1,2 +1,5 @@
+- defaults:
+    link:
+      relink: true
 - link:
     ~/.bashrc: bashrc
