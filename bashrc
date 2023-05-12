@@ -188,6 +188,7 @@
 alias tt="echo 'test ok!'"
 
 if [[ "$USER"  == "zitian" ]]; then
+    alias activate_heaplax="source /nobackup/users/zfchen/zt/.dotfiles/bashrc"
     module load cuda/11.2
-    source /root/Desktop/workspace/anaconda3/bin/activate && conda activate
+    source /nobackup/users/zitian/code/Heaplax/anaconda3/bin/activate && conda activate
 fi
