@@ -1,8 +1,10 @@
 - defaults:
     link:
+      force: true
       relink: true
 
 - clean: ['~']
 
 - link:
     ~/.bashrc: bashrc
+    ~/.config/fish/config.fish: config.fish

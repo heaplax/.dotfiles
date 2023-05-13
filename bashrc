@@ -191,6 +191,7 @@ if [[ "$USER"  == "zitian" ]]; then
     module load cuda/11.2
     source /nobackup/users/zitian/code/Heaplax/anaconda3/bin/activate && conda activate
     workspace=/nobackup/users/zfchen/zt
+    cd $workspace
 fi
 
 alias tt="echo 'test ok!'"
