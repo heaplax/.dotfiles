@@ -188,7 +188,7 @@
 
 if [[ "$USER"  == "zitian" ]]; then
     alias activate_heaplax="source /nobackup/users/zfchen/zt/.dotfiles/bashrc"
-    module load cuda/11.2
+    module load cuda/11.4
     source /nobackup/users/zitian/code/Heaplax/anaconda3/bin/activate && conda activate
     workspace=/nobackup/users/zfchen/zt
     cd $workspace
