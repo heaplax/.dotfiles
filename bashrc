@@ -203,3 +203,8 @@ push_func ()
     git push -u origin main
 }
 alias gph=push_func
+
+srun_node ()
+{
+    srun --gres=gpu:$1 --cpus-per-task=64 -N $2 --mem=1T --time 24:00:00 --qos=sched_level_2 --pty bash $cmd_file
+}
